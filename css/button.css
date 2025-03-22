@@ -57,7 +57,7 @@
   }
   &.ico1 {
     --width: 2.4rem;
-    --bg: url('/images/ico_heart_white.svg');
+    --bg: url('../images/ico_heart_white.svg');
   }
   &.ico2 {
     --width: 2.4rem;
