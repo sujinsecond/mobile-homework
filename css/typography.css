@@ -1,3 +1,10 @@
+/* .text-xxs {
+  color: var(--color, var(--gray900));
+  font-size: var(--fs, var(--font-xxs));
+  line-height: var(--lh, var(--lh-xs));
+  letter-spacing: var(--ls, var(--ls-xs));
+  font-weight: var(--fw, 400);
+} */
 .text-xs {
   color: var(--color, var(--gray900));
   font-size: var(--fs, var(--font-xs));

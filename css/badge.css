@@ -17,12 +17,20 @@
   /* -------------------------------------------------------------------------- */
   /*                                    색상정의                                  */
   /* -------------------------------------------------------------------------- */
-  &.blue {
+  &.green {
     color: var(--white);
-    background-color: var(--blue600);
+    background-color: var(--green500);
   }
-  &.orange {
+  &.red {
     color: var(--white);
     background-color: var(--red500);
+  }
+  &.yellow {
+    color: var(--white);
+    background-color: var(--yellow500);
+  }
+  &.blue {
+    color: var(--white);
+    background-color: var(--blue500);
   }
 }
