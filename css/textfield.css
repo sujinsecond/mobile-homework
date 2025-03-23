@@ -7,9 +7,9 @@
   --fontSize: 1.6rem;
   --color: var(--gray600);
   --placeholderColor: var(--gray600);
-  --disabled:0.5;
+  --disabled: 0.5;
   --disabledColor: var(--gray300); /*추가*/
-  --focusBorderColor:var(--gray600); /*변경*/
+  --focusBorderColor: var(--gray600); /*변경*/
 
   padding-inline: var(--paddingX);
   padding-block: var(--paddingY, 0);
@@ -24,6 +24,7 @@
     color: var(--placeholderColor);
   }
   &:disabled {
+    border: none;
     opacity: var(--disabled, 0.2);
   }
   &.error {
