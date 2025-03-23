@@ -11,7 +11,7 @@
   /* -------------------------------------------------------------------------- */
   &.base {
     --px: 3rem;
-    --py: 0.9rem;
+    --py: 0.8rem;
     --fs: 1.6rem;
     padding-inline: var(--px);
     padding-block: var(--py);
@@ -33,14 +33,43 @@
   &.primary {
     color: var(--white);
     background-color: var(--primary);
+    border:1px solid var(--primary);
+    
+    &:hover{
+      background-color: var(--blue400); 
+    }
+    &:focus{
+      border: 3px solid var(--gray400);
+    }
   }
+  &.loading{
+    /* padding: 0.8rem 3rem; */
+    height: 3.7rem;
+    border:1px solid var(--primary);
+  }
+
   &.secondary {
-    color: var(----gray500);
+    color: var(--primary);
     background-color: var(--white);
     border: 1px solid var(--primary);
   }
+
+  &.subtle {
+    color: var(--primary);
+    background-color: var(--white);
+    border: 1px solid var(--gray500);
+  }
+  &.text {
+    color: var(--primary);
+    background-color: var(--white);
+    /* border: 1px solid var(--primary); */
+  }
   &:disabled {
     opacity: 0.2;
+    cursor: none;
+    &:hover{
+      background-color: var(--blue500); 
+    }
   }
 
   /* -------------------------------------------------------------------------- */
