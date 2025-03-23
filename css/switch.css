@@ -1,12 +1,12 @@
 .switch {
-  --width: 100px;
-  --height: 40px;
+  --width: 6.4rem;
+  --height: 3.6rem;
   --padding: 2px;
-  --borderColor: gray;
-  --offColor: silver;
+  --borderColor: #555555;
+  --offColor: #555555;
   --offBgColor: rgba(0, 0, 0, 0.05);
-  --onColor: lightgreen;
-  --onBgColor: green;
+  --onColor: #ffffff;
+  --onBgColor: #002ef1;
   --textColor: #000;
 
   input {
@@ -45,7 +45,7 @@
     width: var(--width);
     height: var(--height);
     padding: var(--padding) calc(var(--padding) * 4);
-    border: 1px solid var(--borderColor);
+    /* border: 1px solid var(--borderColor); */
     align-items: center;
     justify-content: end;
     transition: 0.4s;
