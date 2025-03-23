@@ -1,11 +1,11 @@
 .radio {
   --offImage: url(../images/ico_radio_off.svg);
   --onImage: url(../images/ico_radio_on.svg);
-  --fontSize: 19px;
-  --beforeColor: gray;
-  --afterColor: tomato;
-  --pl: 32px;
-  --height: 24px;
+  --fontSize: 1.5rem;
+  --beforeColor: #002ef1;
+  --afterColor: #002ef1;
+  --pl: 4rem;
+  --height: 3.2rem;
 
   display: inline-flex;
   align-items: center;

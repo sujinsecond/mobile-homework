@@ -1,11 +1,13 @@
+@import url(/css/variable.css);
+
 .checkbox {
   --offImage: url(../images/ico_check_off.svg);
   --onImage: url(../images/ico_check_on.svg);
-  --fontSize: 15px;
-  --beforeColor: gray;
-  --afterColor: blue;
+  --fontSize: 1.5rem;
+  --beforeColor: #002ef1;
+  --afterColor: #002ef1;
   --pl: 3rem;
-  --height: 24px;
+  --height: 2.4rem;
 
   display: inline-flex;
   align-items: center;

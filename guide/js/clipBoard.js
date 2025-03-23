@@ -58,6 +58,8 @@ const css = () => {
       padding:1rem;
       margin-block:2rem 3rem;
       min-height:1rem;
+      display:flex;
+      gap:2rem;
       .btn-copy {
         position:absolute;
         right:0;
