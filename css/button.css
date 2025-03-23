@@ -4,7 +4,7 @@
   box-sizing: border-box;
   text-align: center;
   justify-content: center;
-  gap:0.8rem;
+  gap: 0.8rem;
 
   /* -------------------------------------------------------------------------- */
   /*                                    크기정의                                  */
@@ -12,8 +12,7 @@
   &.base {
     --px: 3rem;
     --py: 0.9rem;
-    /* --fs:1.2rem; */
-
+    --fs: 1.6rem;
     padding-inline: var(--px);
     padding-block: var(--py);
     font-size: var(--fs, var(--font-base));
@@ -21,7 +20,7 @@
   &.md {
     --px: 4rem;
     --py: 1.4rem;
-    /* --fs:1.2rem; */
+    --fs: 1.6rem;
 
     padding-inline: var(--px);
     padding-block: var(--py);
