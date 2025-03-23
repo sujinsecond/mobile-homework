@@ -59,6 +59,7 @@ const css = () => {
       margin-block:2rem 3rem;
       min-height:1rem;
       display:flex;
+      flex-direction:column;
       gap:2rem;
       .btn-copy {
         position:absolute;
