@@ -132,6 +132,7 @@
     color: var(--primary);
     background-color: transparent;
     border: none;
+    height: 3.7rem; /* 다른 버튼과 동일한 높이로 설정 */
 
     &:hover,
     &.hover-state {
