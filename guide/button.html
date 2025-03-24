@@ -1,54 +1,58 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buttons</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="module" src="./js/clipBoard.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Buttons</title>
-  <link rel="stylesheet" href="../css/style.css" />
-  <script type="module" src="./js/clipBoard.js"></script>
-</head>
+  <body>
+    <h2>크기 정의</h2>
+    <div class="copy-group">
+      <div class="copy">
+        <button class="btn base secondary">Base</button>
+      </div>
+      <div class="copy">
+        <button class="btn md secondary">Md</button>
+      </div>
+    </div>
 
-<body>
-  <h2>크기 정의</h2>
-  <div class="copy">
-    <button class="btn base secondary">Base</button>
-    <button class="btn md secondary">Md</button>
-  </div>
-  <h2>색상 정의</h2>
-  <div class="copy">
-    <button class="btn base primary">Primary</button>
-    <button class="btn base secondary">Secondary</button>
-    <button class="btn base subtle">Subtle</button>
-    <button class="btn base text">Text</button>
-  </div>
-  <h2>상황 정의</h2>
+    <h2>색상 정의</h2>
+    <div class="copy-group">
+      <div class="copy"><button class="btn base primary">Primary</button></div>
+      <div class="copy"><button class="btn base secondary">Secondary</button></div>
+      <div class="copy"><button class="btn base subtle">Subtle</button></div>
+      <div class="copy"><button class="btn base text">Text</button></div>
+    </div>
+
+    <h2>상황 정의</h2>
     <div class="copy-group">
       <div class="copy"><button class="btn base primary">Button</button></div>
       <div class="copy">
         <button class="btn base primary loading">
-          <img src="../images/ico_loading_white.svg" alt="loading">
+          <img src="../images/ico_loading_white.svg" alt="loading" />
         </button>
       </div>
       <div class="copy"><button class="btn base primary" disabled>disabled</button></div>
     </div>
-  <h2>아이콘 조합 버튼</h2>
-  <div class="copy-group">
-    <div class="copy"><button class="btn base primary ico1">ico1</button></div>
-    <div class="copy"><button class="btn base secondary ico2">ico2</button></div>
-  </div>
-  <h2>아이콘 전용 버튼</h2>
-  <div class="copy-group">
-    <div class="copy">
-      <button class="icon-button"><img src="./images/logo.png" alt="rebehayan"></button>
+    <h2>아이콘 조합 버튼</h2>
+    <div class="copy-group">
+      <div class="copy"><button class="btn base primary ico1">ico1</button></div>
+      <div class="copy"><button class="btn base secondary ico2">ico2</button></div>
     </div>
-    <div class="copy">
-      <button class="icon-button"><img src="./images/logo.png" alt="rebehayan"></button>
+    <h2>아이콘 전용 버튼</h2>
+    <div class="copy-group">
+      <div class="copy">
+        <button class="icon-button"><img src="./images/logo.png" alt="rebehayan" /></button>
+      </div>
+      <div class="copy">
+        <button class="icon-button"><img src="./images/logo.png" alt="rebehayan" /></button>
+      </div>
+      <div class="copy">
+        <button class="icon-button"><img src="./images/logo.png" alt="rebehayan" /></button>
+      </div>
     </div>
-    <div class="copy">
-      <button class="icon-button"><img src="./images/logo.png" alt="rebehayan"></button>
-    </div>
-  </div>
-</body>
-
+  </body>
 </html>
