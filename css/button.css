@@ -35,10 +35,12 @@
     background-color: var(--primary);
     border: 1px solid var(--primary);
 
-    &:hover {
+    &:hover,
+    &.hover-state {
       background-color: var(--blue400);
     }
-    &:focus {
+    &:focus,
+    &.focus-state {
       border: 3px solid var(--gray400);
       outline: none;
     }
@@ -62,21 +64,28 @@
     color: var(--primary);
     background-color: var(--white);
     border: 1px solid var(--primary);
-    &:hover {
+
+    &:hover,
+    &.hover-state {
       border: 1px solid var(--primary);
+      background-color: var(--gray100);
     }
-    &:focus {
+
+    &:focus,
+    &.focus-state {
       background-color: var(--gray400);
       outline: none;
     }
+
     &.loading {
       height: 3.7rem;
       border: 1px solid var(--primary);
-      background-color: var(--gray300);
+      background-color: var(--white);
       background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2225%22%20height%3D%2224%22%20viewBox%3D%220%200%2025%2024%22%20fill%3D%22none%22%3E%20%20%20%3Cpath%20d%3D%22M12.7321%202C10.7542%202%208.82085%202.58649%207.17635%203.6853C5.53186%204.78412%204.25014%206.3459%203.49326%208.17317C2.73638%2010.0004%202.53835%2012.0111%202.9242%2013.9509C3.31005%2015.8907%204.26246%2017.6725%205.66099%2019.0711C7.05951%2020.4696%208.84134%2021.422%2010.7812%2021.8079C12.721%2022.1937%2014.7316%2021.9957%2016.5589%2021.2388C18.3861%2020.4819%2019.9479%2019.2002%2021.0468%2017.5557C22.1456%2015.9112%2022.7321%2013.9778%2022.7321%2012%22%20stroke%3D%22%23002EF1%22%20stroke-width%3D%222%22%20stroke-linejoin%3D%22round%22%2F%3E%20%3C%2Fsvg%3E');
       background-repeat: no-repeat;
       background-position: center;
     }
+
     &:disabled {
       opacity: 0.2;
       cursor: not-allowed;
@@ -89,21 +98,28 @@
     color: var(--primary);
     background-color: var(--white);
     border: 1px solid var(--gray500);
-    &:hover {
+
+    &:hover,
+    &.hover-state {
       border: 1px solid var(--gray500);
+      background-color: var(--gray100);
     }
-    &:focus {
+
+    &:focus,
+    &.focus-state {
       background-color: var(--gray400);
       outline: none;
     }
+
     &.loading {
       height: 3.7rem;
       border: 1px solid var(--gray500);
-      background-color: var(--gray300);
+      background-color: var(--white);
       background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2225%22%20height%3D%2224%22%20viewBox%3D%220%200%2025%2024%22%20fill%3D%22none%22%3E%20%20%20%3Cpath%20d%3D%22M12.7321%202C10.7542%202%208.82085%202.58649%207.17635%203.6853C5.53186%204.78412%204.25014%206.3459%203.49326%208.17317C2.73638%2010.0004%202.53835%2012.0111%202.9242%2013.9509C3.31005%2015.8907%204.26246%2017.6725%205.66099%2019.0711C7.05951%2020.4696%208.84134%2021.422%2010.7812%2021.8079C12.721%2022.1937%2014.7316%2021.9957%2016.5589%2021.2388C18.3861%2020.4819%2019.9479%2019.2002%2021.0468%2017.5557C22.1456%2015.9112%2022.7321%2013.9778%2022.7321%2012%22%20stroke%3D%22%23002EF1%22%20stroke-width%3D%222%22%20stroke-linejoin%3D%22round%22%2F%3E%20%3C%2Fsvg%3E');
       background-repeat: no-repeat;
       background-position: center;
     }
+
     &:disabled {
       opacity: 0.2;
       cursor: not-allowed;
@@ -111,20 +127,28 @@
       border: 1px solid var(--gray500);
     }
   }
+
   &.text {
     color: var(--primary);
-    background-color: var(--white);
-    &:hover {
-      border: none;
+    background-color: transparent;
+    border: none;
+
+    &:hover,
+    &.hover-state {
+      background-color: var(--gray100);
     }
-    &:focus {
+
+    &:focus,
+    &.focus-state {
       background-color: var(--gray200);
       outline: none;
     }
+
     &.loading {
       height: 3.7rem;
       background-color: var(--gray100);
     }
+
     &:disabled {
       opacity: 0.2;
       cursor: not-allowed;
