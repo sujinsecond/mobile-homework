@@ -104,7 +104,8 @@ h1 {
         background-color: var(--summaryActiveColor);
         color: #fff;
         &::after {
-          background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 24 24"><g id="feArrowRight0" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1"><g id="feArrowRight1" fill="white"><path id="feArrowRight2" d="m9.005 4l8 8l-8 8L7 18l6.005-6L7 6z"/></g></g></svg>') no-repeat center / contain;
+          background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 24 24"><g id="feArrowRight0" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1"><g id="feArrowRight1" fill="white"><path id="feArrowRight2" d="m9.005 4l8 8l-8 8L7 18l6.005-6L7 6z"/></g></g></svg>')
+            no-repeat center / contain;
           rotate: 90deg;
         }
       }
@@ -128,8 +129,9 @@ h1 {
     transition: 0.4s;
     cursor: pointer;
     &::after {
-      content: "";
-      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 24 24"><g id="feArrowRight0" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1"><g id="feArrowRight1" fill="gray"><path id="feArrowRight2" d="m9.005 4l8 8l-8 8L7 18l6.005-6L7 6z"/></g></g></svg>') no-repeat center / contain;
+      content: '';
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 24 24"><g id="feArrowRight0" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1"><g id="feArrowRight1" fill="gray"><path id="feArrowRight2" d="m9.005 4l8 8l-8 8L7 18l6.005-6L7 6z"/></g></g></svg>')
+        no-repeat center / contain;
       width: 1.4rem;
       aspect-ratio: 1;
       transition: 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
@@ -148,7 +150,7 @@ h1 {
       padding-inline: 0;
     }
     &::before {
-      content: "-";
+      content: '-';
       margin-right: 1rem;
     }
     &.active {
@@ -198,7 +200,7 @@ iframe {
   line-height: 1;
   gap: 0.5rem;
   &::after {
-    content: "";
+    content: '';
     background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 32 32"><path fill="%23000" d="M28 4H10a2.006 2.006 0 0 0-2 2v14a2.006 2.006 0 0 0 2 2h18a2.006 2.006 0 0 0 2-2V6a2.006 2.006 0 0 0-2-2Zm0 16H10V6h18Z"/><path fill="%23000" d="M18 26H4V16h2v-2H4a2.006 2.006 0 0 0-2 2v10a2.006 2.006 0 0 0 2 2h14a2.006 2.006 0 0 0 2-2v-2h-2Z"/></svg>')
       no-repeat center / contain;
     width: 2rem;
@@ -213,8 +215,9 @@ iframe {
   line-height: 1;
   gap: 0.5rem;
   &::after {
-    content: "";
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><rect width="16" height="22" x="4" y="1" rx="3"/><path d="M10 19h4"/></g></svg>') no-repeat center / contain;
+    content: '';
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><rect width="16" height="22" x="4" y="1" rx="3"/><path d="M10 19h4"/></g></svg>')
+      no-repeat center / contain;
     width: 2rem;
     aspect-ratio: 1;
   }
