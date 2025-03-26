@@ -24,7 +24,7 @@ export const frame = () => {
           padding:0 20px 20px;
         }
         > h2:not([class]) {
-          margin-block:40px 20px;
+          margin-block:100px 0px;
           font-size:20px;
           &:first-child {
             margin-top:0;

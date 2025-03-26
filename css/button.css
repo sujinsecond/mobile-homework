@@ -9,19 +9,25 @@
   /* -------------------------------------------------------------------------- */
   /*                                    크기정의                                  */
   /* -------------------------------------------------------------------------- */
+  /* -------------------------------------------------------------------------- */
+  /*                                    크기정의                                  */
+  /* -------------------------------------------------------------------------- */
   &.base {
     --px: 3rem;
     --py: 0.8rem;
     --fs: 1.6rem;
+    --height: 3.7rem; /* 높이 변수 추가 */
+    height: var(--height); /* 높이 설정 */
     padding-inline: var(--px);
     padding-block: var(--py);
     font-size: var(--fs, var(--font-base));
   }
   &.md {
     --px: 4rem;
-    --py: 1.4rem;
+    --py: 1.6rem;
     --fs: 1.6rem;
-
+    --height: 5.6rem; /* 높이 변수 추가 */
+    height: var(--height); /* 높이 설정 */
     padding-inline: var(--px);
     padding-block: var(--py);
     font-size: var(--fs, var(--font-base));
@@ -45,12 +51,15 @@
       outline: none;
     }
     &.loading {
-      height: 3.7rem;
+      padding: 0.8rem 3rem;
       border: 1px solid var(--primary);
       background-color: var(--primary);
       background-image: url(../images/ico_loading_white.svg);
       background-repeat: no-repeat;
       background-position: center;
+    }
+    &.md.loading {
+      padding: 1.6rem 4rem;
     }
     &:disabled {
       opacity: 0.2;
@@ -70,22 +79,21 @@
       border: 1px solid var(--primary);
       background-color: var(--gray100);
     }
-
     &:focus,
     &.focus-state {
       background-color: var(--gray400);
       outline: none;
     }
-
     &.loading {
-      height: 3.7rem;
       border: 1px solid var(--primary);
       background-color: var(--white);
       background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2225%22%20height%3D%2224%22%20viewBox%3D%220%200%2025%2024%22%20fill%3D%22none%22%3E%20%20%20%3Cpath%20d%3D%22M12.7321%202C10.7542%202%208.82085%202.58649%207.17635%203.6853C5.53186%204.78412%204.25014%206.3459%203.49326%208.17317C2.73638%2010.0004%202.53835%2012.0111%202.9242%2013.9509C3.31005%2015.8907%204.26246%2017.6725%205.66099%2019.0711C7.05951%2020.4696%208.84134%2021.422%2010.7812%2021.8079C12.721%2022.1937%2014.7316%2021.9957%2016.5589%2021.2388C18.3861%2020.4819%2019.9479%2019.2002%2021.0468%2017.5557C22.1456%2015.9112%2022.7321%2013.9778%2022.7321%2012%22%20stroke%3D%22%23002EF1%22%20stroke-width%3D%222%22%20stroke-linejoin%3D%22round%22%2F%3E%20%3C%2Fsvg%3E');
       background-repeat: no-repeat;
       background-position: center;
     }
-
+    &.md.loading {
+      padding: 1.6rem 4rem;
+    }
     &:disabled {
       opacity: 0.2;
       cursor: not-allowed;
@@ -104,22 +112,21 @@
       border: 1px solid var(--gray500);
       background-color: var(--gray100);
     }
-
     &:focus,
     &.focus-state {
       background-color: var(--gray400);
       outline: none;
     }
-
     &.loading {
-      height: 3.7rem;
       border: 1px solid var(--gray500);
       background-color: var(--white);
       background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2225%22%20height%3D%2224%22%20viewBox%3D%220%200%2025%2024%22%20fill%3D%22none%22%3E%20%20%20%3Cpath%20d%3D%22M12.7321%202C10.7542%202%208.82085%202.58649%207.17635%203.6853C5.53186%204.78412%204.25014%206.3459%203.49326%208.17317C2.73638%2010.0004%202.53835%2012.0111%202.9242%2013.9509C3.31005%2015.8907%204.26246%2017.6725%205.66099%2019.0711C7.05951%2020.4696%208.84134%2021.422%2010.7812%2021.8079C12.721%2022.1937%2014.7316%2021.9957%2016.5589%2021.2388C18.3861%2020.4819%2019.9479%2019.2002%2021.0468%2017.5557C22.1456%2015.9112%2022.7321%2013.9778%2022.7321%2012%22%20stroke%3D%22%23002EF1%22%20stroke-width%3D%222%22%20stroke-linejoin%3D%22round%22%2F%3E%20%3C%2Fsvg%3E');
       background-repeat: no-repeat;
       background-position: center;
     }
-
+    &.md.loading {
+      padding: 1.6rem 4rem;
+    }
     &:disabled {
       opacity: 0.2;
       cursor: not-allowed;
@@ -132,27 +139,25 @@
     color: var(--primary);
     background-color: transparent;
     border: none;
-    height: 3.7rem; /* 다른 버튼과 동일한 높이로 설정 */
 
     &:hover,
     &.hover-state {
       background-color: var(--gray100);
     }
-
     &:focus,
     &.focus-state {
       background-color: var(--gray200);
       outline: none;
     }
-
     &.loading {
-      height: 3.7rem;
       background-color: var(--gray100);
       /* background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2225%22%20height%3D%2224%22%20viewBox%3D%220%200%2025%2024%22%20fill%3D%22none%22%3E%20%20%20%3Cpath%20d%3D%22M12.7321%202C10.7542%202%208.82085%202.58649%207.17635%203.6853C5.53186%204.78412%204.25014%206.3459%203.49326%208.17317C2.73638%2010.0004%202.53835%2012.0111%202.9242%2013.9509C3.31005%2015.8907%204.26246%2017.6725%205.66099%2019.0711C7.05951%2020.4696%208.84134%2021.422%2010.7812%2021.8079C12.721%2022.1937%2014.7316%2021.9957%2016.5589%2021.2388C18.3861%2020.4819%2019.9479%2019.2002%2021.0468%2017.5557C22.1456%2015.9112%2022.7321%2013.9778%2022.7321%2012%22%20stroke%3D%22%23002EF1%22%20stroke-width%3D%222%22%20stroke-linejoin%3D%22round%22%2F%3E%20%3C%2Fsvg%3E');
       background-repeat: no-repeat;
       background-position: center; */
     }
-
+    &.md.loading {
+      padding: 1.6rem 4rem;
+    }
     &:disabled {
       opacity: 0.2;
       cursor: not-allowed;
@@ -168,7 +173,7 @@
   /*                                    아이콘정의                                */
   /* -------------------------------------------------------------------------- */
   &[class*='ico'] {
-    height: 3.7rem; /* 다른 버튼과 동일한 높이 적용 */
+    /* height: 3.7rem; */
 
     &::before {
       content: '';

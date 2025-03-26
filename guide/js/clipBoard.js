@@ -56,7 +56,7 @@ const css = () => {
       position:relative;
       border:2px dashed gray;
       padding:1rem;
-      margin-block:2rem 3rem;
+      margin-block:2rem 0rem;
       min-height:1rem;
       .btn-copy {
         position:absolute;
