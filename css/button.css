@@ -1,7 +1,7 @@
 .btn {
   display: inline-flex;
   align-items: center;
-  box-sizing: border-box;
+  box-sizing: border-box; /* 박스사이징 보더박스 처리 */
   text-align: center;
   justify-content: center;
   gap: 0.8rem;
@@ -16,21 +16,25 @@
     --px: 3rem;
     --py: 0.8rem;
     --fs: 1.6rem;
-    --height: 4rem; /* 높이 변수 추가 */
-    height: var(--height); /* 높이 설정 */
+    --height: 4rem;
+
+    height: var(--height);
     padding-inline: var(--px);
     padding-block: var(--py);
     font-size: var(--fs, var(--font-base));
+    line-height: 1;
   }
   &.md {
     --px: 4rem;
     --py: 1.6rem;
     --fs: 1.6rem;
-    --height: 5.6rem; /* 높이 변수 추가 */
-    height: var(--height); /* 높이 설정 */
+    --height: 5.6rem;
+
+    height: var(--height);
     padding-inline: var(--px);
     padding-block: var(--py);
     font-size: var(--fs, var(--font-base));
+    line-height: 1;
   }
 
   /* -------------------------------------------------------------------------- */
@@ -39,18 +43,18 @@
   &.primary {
     color: var(--white);
     background-color: var(--primary);
-    border: 1px solid var(--primary);
+    /* border: 1px solid var(--primary); */
 
     &:hover,
     &.hover-state {
       background-color: var(--blue400);
-      height: var(--height); /* 높이 명시적 설정 추가 */
+      /* height: var(--height); */
     }
     &:focus,
     &.focus-state {
       border: 3px solid var(--gray400);
       outline: none;
-      height: var(--height); /* 높이 명시적 설정 추가 */
+      /* height: var(--height); */
     }
     &.loading {
       padding: 0.8rem 3rem;
