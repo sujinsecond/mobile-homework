@@ -1,4 +1,6 @@
 .badge {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
   --paddingX: 1.6rem;
   --paddingY: 0.8rem;
   --fontSize: 1.6rem;
@@ -14,6 +16,12 @@
   font-size: var(--fontSize, var(--font-base));
   border-radius: var(--radius);
   line-height: var(--lh-base);
+  /* line-height: 1; */
+
+  /* 폰트 렌더링 최적화 */
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
   /* -------------------------------------------------------------------------- */
   /*                                    색상정의                                  */
