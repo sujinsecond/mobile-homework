@@ -1,8 +1,8 @@
 .badge {
-  --paddingX: 1rem;
-  --paddingY: 1rem;
-  --fontSize: 1.2rem;
-  --radius: 1rem;
+  --paddingX: 1.6rem;
+  --paddingY: 0.8rem;
+  --fontSize: 1.6rem;
+  --radius: 0.8rem;
 
   display: inline-flex;
   align-items: center;
@@ -13,6 +13,7 @@
   padding-block: var(--paddingY);
   font-size: var(--fontSize, var(--font-base));
   border-radius: var(--radius);
+  line-height: var(--lh-base);
 
   /* -------------------------------------------------------------------------- */
   /*                                    색상정의                                  */
