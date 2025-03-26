@@ -16,7 +16,7 @@
     --px: 3rem;
     --py: 0.8rem;
     --fs: 1.6rem;
-    --height: 3.7rem; /* 높이 변수 추가 */
+    --height: 4rem; /* 높이 변수 추가 */
     height: var(--height); /* 높이 설정 */
     padding-inline: var(--px);
     padding-block: var(--py);
