@@ -44,11 +44,13 @@
     &:hover,
     &.hover-state {
       background-color: var(--blue400);
+      height: var(--height); /* 높이 명시적 설정 추가 */
     }
     &:focus,
     &.focus-state {
       border: 3px solid var(--gray400);
       outline: none;
+      height: var(--height); /* 높이 명시적 설정 추가 */
     }
     &.loading {
       padding: 0.8rem 3rem;
