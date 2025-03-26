@@ -4,6 +4,7 @@
   box-sizing: border-box; /* 박스사이징 보더박스 처리 */
   text-align: center;
   justify-content: center;
+  align-items: center;
   gap: 0.8rem;
 
   /* -------------------------------------------------------------------------- */
