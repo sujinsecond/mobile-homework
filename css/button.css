@@ -47,13 +47,11 @@
     background-color: var(--primary);
     /* border: 1px solid var(--primary); */
 
-    &:hover,
-    &.hover-state {
+    &:hover {
       background-color: var(--blue400);
       /* height: var(--height); */
     }
-    &:focus,
-    &.focus-state {
+    &:focus {
       border: 3px solid var(--gray400);
       outline: none;
       /* height: var(--height); */
@@ -82,13 +80,11 @@
     background-color: var(--white);
     border: 1px solid var(--primary);
 
-    &:hover,
-    &.hover-state {
+    &:hover {
       border: 1px solid var(--primary);
       background-color: var(--gray100);
     }
-    &:focus,
-    &.focus-state {
+    &:focus {
       background-color: var(--gray400);
       outline: none;
     }
@@ -115,13 +111,11 @@
     background-color: var(--white);
     border: 1px solid var(--gray500);
 
-    &:hover,
-    &.hover-state {
+    &:hover {
       border: 1px solid var(--gray500);
       background-color: var(--gray100);
     }
-    &:focus,
-    &.focus-state {
+    &:focus {
       background-color: var(--gray400);
       outline: none;
     }
@@ -148,12 +142,10 @@
     background-color: transparent;
     border: none;
 
-    &:hover,
-    &.hover-state {
+    &:hover {
       background-color: var(--gray100);
     }
-    &:focus,
-    &.focus-state {
+    &:focus {
       background-color: var(--gray200);
       outline: none;
     }
