@@ -15,11 +15,14 @@
   padding-block: var(--paddingY, 0);
   width: var(--width);
   height: var(--height);
-  border: 1px solid var(--borderColor);
+  /* border: 1px solid var(--borderColor); */
+  background-color: var(--gray300);
   border-radius: var(--rounded);
   box-sizing: border-box;
   color: var(--color);
   font-size: var(--fontSize);
+  outline: none;
+
   &::placeholder {
     color: var(--placeholderColor);
   }
@@ -30,6 +33,7 @@
   &.error {
     border: 1px solid var(--danger);
     color: var(--danger);
+    background-color: white;
   }
 }
 textarea {
