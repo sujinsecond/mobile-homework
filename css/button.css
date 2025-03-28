@@ -45,13 +45,13 @@
   &.primary {
     color: var(--white);
     background-color: var(--primary);
-    border: 3px solid var(--primary);
+    border: 1px solid var(--primary);
 
     &:hover {
       background-color: var(--blue400);
     }
     &:focus {
-      border: 3px solid var(--gray400);
+      border: 1px solid var(--gray400);
       outline: none;
       /* height: var(--height); */
     }

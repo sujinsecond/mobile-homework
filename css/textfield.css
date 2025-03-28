@@ -26,8 +26,12 @@
   &::placeholder {
     color: var(--placeholderColor);
   }
+  &:focus {
+    border-color: var(--focusBorderColor);
+  }
   &:disabled {
     border: none;
+    color: var(--disabledColor);
     opacity: var(--disabled, 0.2);
   }
   &.error {
