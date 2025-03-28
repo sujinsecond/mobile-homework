@@ -27,7 +27,7 @@
     color: var(--placeholderColor);
   }
   &:focus {
-    border-color: var(--focusBorderColor);
+    border: 2px solid var(--focusBorderColor);
   }
   &:disabled {
     border: none;
