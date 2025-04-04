@@ -8,8 +8,8 @@
   --color: var(--gray600);
   --placeholderColor: var(--gray600);
   --disabled: 0.5;
-  --disabledColor: var(--gray300); /*추가*/
-  --focusBorderColor: var(--gray600); /*변경*/
+  --disabledColor: var(--gray300); /*추가 */
+  --focusBorderColor: var(--gray600); /*변경 */
 
   padding-inline: var(--paddingX);
   padding-block: var(--paddingY, 0);
